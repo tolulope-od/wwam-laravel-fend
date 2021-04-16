@@ -259,7 +259,8 @@ var Landing = function Landing() {
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
                           className: "flex w-full",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                            href: "/login",
                             type: "button",
                             className: "btn rounded-md w-full border-wwam-blue bg-wwam-blue hover:text-wwam-blue hover:bg-transparent hover:border-wwam-blue",
                             children: "Login"
@@ -413,6 +414,7 @@ var Landing = function Landing() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
             className: "w-full max-w-md space-y-2",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+              id: "step_zero",
               className: "btn rounded-md w-full border-wwam-blue bg-wwam-blue hover:bg-transparent hover:border-white",
               children: "Join Now"
             })

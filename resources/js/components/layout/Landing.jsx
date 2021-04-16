@@ -111,10 +111,10 @@ const Landing = () => {
                             </div>
                           </div>
                           <div className="flex w-full">
-                            <button type="button"
+                            <a href="/login" type="button"
                                     className="btn rounded-md w-full border-wwam-blue bg-wwam-blue hover:text-wwam-blue hover:bg-transparent hover:border-wwam-blue">
                               Login
-                            </button>
+                            </a>
                           </div>
                         </form>
                       </div>
@@ -204,6 +204,7 @@ const Landing = () => {
             </div>
             <div className="w-full max-w-md space-y-2">
               <button
+                id="step_zero"
                 className="btn rounded-md w-full border-wwam-blue bg-wwam-blue hover:bg-transparent hover:border-white">
                 Join Now
               </button>
