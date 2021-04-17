@@ -20,7 +20,6 @@
       <script type="text/javascript" src="/assets/js/jquery.Jcrop.min.js?1570010720"></script>
 
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
-      <script src="/ckeditor/ckeditor.js" type="text/javascript"></script>
       <style>.cke {
               visibility: hidden;
           }</style>
@@ -33,14 +32,28 @@
       <script type="text/javascript" src="/assets/js/flowplayer/flowplayer.js?1570011142"></script>
       <script type="text/javascript" src="/assets/js/slimbox2.js?1570010726"></script>
       <script type="text/javascript" src="/assets/js/cookie.js?1570010715"></script>
-      <script type="text/javascript" src="/assets/js/chat.js?1570010713"></script>
       <script type="text/javascript" src="/assets/js/member_interaction.js?1570010725"></script>
         <title>WhereWeAllMeet</title>
     </head>
     <body>
-        <div id="app">
-        </div>
-      <script src="/js/app.js"></script>
+    @yield('content')
+{{--        <div id="app">--}}
+{{--        </div>--}}
+{{--      <script src="/js/app.js"></script>--}}
+    <script>
+      let toggleLoginMenu = function () {
+        let dropDownMenu = document.getElementById('dropdown-menu');
+
+        if (Array.from(dropDownMenu.classList).includes('hidden')) {
+          return dropDownMenu.classList.remove('hidden');
+        }
+        return dropDownMenu.classList.add('hidden');
+        // console.log(Array.from(dropDownMenu.classList).includes('hidden'));
+      }
+      let dropDownBtn = document.getElementById('dropdown-btn');
+      let landingPage = document.getElementById('landing-page');
+      dropDownBtn.onclick = toggleLoginMenu;
+    </script>
         <script src="/assets/js/pages/home.js"></script>
     </body>
 </html>
